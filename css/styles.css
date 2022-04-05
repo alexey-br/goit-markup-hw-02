@@ -4,51 +4,59 @@
     --color-accent: #2196F3;
 }
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, Verdana, Tahoma, sans-serif;
     color: var(--color-main-text);
 }
-/* -- секция заголовка -- */
+.link {
+    text-decoration: none;
+}
+.link:hover,
+.link:focus {
+    color: var(--color-accent);
+}
+
+/* ------------- секция заголовка ------------- */
 .logo {
     font: 700 26px Raleway, sans-serif;
     color: #000000;
-    text-decoration: none;
     letter-spacing: 0.03em;
     line-height: 1.2;
+    text-decoration: none;
 }
 .logo-web {
     color: var(--color-accent);
 }
-.nav-list li {
+.nav-item {
     list-style-type: none;
     display: inline-block;
     margin: 0 25px 0 25px;
 }
-.nav-list a, 
-.header-contacts a {
+.nav-link, 
+.header-contacts-link {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
     color: var(--color-main-text);
 }
-.header-contacts li {
+.nav-link.current {
+    color: var(--color-accent);
+}
+.header-contacts-item {
     list-style-type: none;
     display: inline-block;
     margin: 0 25px 0 25px;
 }
-.header-contacts a {
+.header-contacts-link {
     color: var(--color-sec-text);
 }
-/* -- секция портфолио -- */
-.portfolio-filter {
-    text-align: center;
-}
-.portfolio-filter li {
+
+/* ------------- секция портфолио ------------- */
+.portf-filter-item {
     list-style-type: none;
     display: inline-block;
 }
-.portfolio-filter button {
+.portf-filter-btn {
     font: 500 16px Roboto,sans-serif;
     color: var(--color-main-text);
     line-height: 1.6;
@@ -58,23 +66,49 @@ body {
     border: none;
     border-radius: 4px;
 }
-.portfolio-filter button:hover {
+.portf-filter-btn:hover,
+.portf-filter-btn:focus {
     color: #ffffff;
     background-color: var(--color-accent);
     cursor: pointer;
 }
-.portfolio-cards li {
+.portf-cards {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.portf-cards-item {
     list-style-type: none;
     display: inline-block;
+    border: 1px solid #EEEEEE;
+    margin: 15px;
 }
-.portfolio-cards h2 {
+.portf-cards-name {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin: 20px 24px 0 24px;
 }
-.portfolio-cards p {
+.portf-cards p {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--color-sec-text);
+    margin: 4px 24px 20px 24px;
+}
+/* ------------- нижний колонтитул ------------- */
+.footer {
+    background-color: #2F303A;
+}
+.footer-address-item {
+    list-style-type: none;
+}
+.footer-address-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.office-link {
+    color: #ffffff;
 }
