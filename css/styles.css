@@ -1,6 +1,7 @@
 :root {
     --color-main-text: #212121;
     --color-sec-text: #757575;
+    --color-third-text: #FFF;
     --color-accent: #2196F3;
     --color-background: #2F303A;
 }
@@ -69,7 +70,7 @@ body {
 }
 .portf-filter-btn:hover,
 .portf-filter-btn:focus {
-    color: #ffffff;
+    color: var(--color-third-text);
     background-color: var(--color-accent);
     cursor: pointer;
 }
@@ -111,7 +112,7 @@ body {
     letter-spacing: 0.03em;
 }
 .office-link {
-    color: #ffffff;
+    color: var(--color-third-text);
 }
 /* ----------- герой ------------ */
 .hero {
@@ -126,11 +127,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--color-third-text);
 }
 .hero-button {
     font: 700 16px Roboto,sans-serif;
-    color: #FFFFFF;
+    color: var(--color-third-text);
     line-height: 1.87;
     letter-spacing: 0.06em;
     width: 200px;
